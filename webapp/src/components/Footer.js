@@ -1,4 +1,5 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
     return (
@@ -6,7 +7,7 @@ const Footer = () => {
             <div className="row">
                 <div className="col span-1-of-2">
                     <ul className="footer-nav">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#events">Events</a></li>
                         <li><a href="#team">The Team</a></li>

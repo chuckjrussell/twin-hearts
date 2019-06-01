@@ -1,0 +1,268 @@
+header {
+    background-image: -webkit-gradient(linear, left top, left bottom, 
+                        from(var(--header-background-color-overlay)), 
+                        to(var(--header-background-color-overlay))),
+                        url(../img/twin-hearts-crew.jpg);
+    background-image: linear-gradient(
+                        var(--header-background-color-overlay), 
+                        var(--header-background-color-overlay)), 
+                        url(../img/twin-hearts-crew.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 100vh;
+  }
+  
+  .main-logo-container {
+    width: 256px;
+    float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+  }
+
+  .main-logo {
+    width: 256px;
+  }
+  
+  .header-logo-image {
+    width: 256px;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .header-row {    
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    width: 100%;
+  }
+  
+  .header-row:after {
+    clear:both;
+  }
+  
+  .header-left {
+    border-right: 1px var(--header-font-color) solid;
+    height: 210px;
+  }
+  
+  .header-right {
+    padding-left: 30px;
+    height: 210px;
+  }
+  
+  .header-text {
+    margin-bottom: 55px;
+  }
+  
+  /* Main Navigation */
+  .main-nav {
+    list-style: none;
+    margin:30px auto 0px auto;
+  }
+  
+  .main-nav li {
+    display:inline-block;
+    margin-left:40px;
+  }
+  
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    padding: 8px 0px;
+    color:var(--header-font-color);
+    text-decoration:none;
+    text-transform: uppercase;
+    font-size:90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+  }
+  
+  .main-nav li a:hover,
+  .main-nav li a:active {
+    border-bottom: 2px solid var(--accent-color);
+  }
+  
+  
+  /* Mobile navigation */
+  .mobile-nav-icon {
+    margin-top:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+    display: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  .mobile-nav-icon i {
+    font-size: 200%;
+    color: black;
+  }
+  
+  /* Sticky navigation */
+  
+  .sticky .main-nav {
+    margin: 10px auto; 
+    font-size:80%;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.93);
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+    z-index:9999;
+  }
+  
+  .sticky li a:link,
+  .sticky li a:visited {
+    padding: 10px 0px;
+    color:#555;
+  }
+  
+  .logo-container {
+    margin-top: 15px;
+  }
+  
+  .logo-container a:link,
+  .logo-container a:visited { 
+    color:#555;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    -webkit-transition: color 0.2s, border-bottom 0.2s;
+    transition: color 0.2s, border-bottom 0.2s;
+    padding: 6px 0px;
+  }
+  
+  
+  .logo-container a:hover,
+  .logo-container a:active { 
+    color:#555;
+    border-bottom: 1px solid #e67e22;
+    padding: 6px 0px;
+  }
+  
+  .sticky .logo{ 
+    display: block;
+    width: auto;
+    float:left;
+  }
+
+
+@media only screen and (max-width: 767px){
+    .main-nav {
+        display: none;
+        margin: 0;
+    }
+    
+    .mobile-nav-icon { 
+        display: inline-block; 
+    }
+
+    .mobile-nav-icon::after {
+        clear:both;
+    }
+    
+    .main-nav { 
+        float: left;
+        margin-top: 25px;
+    }
+
+    .nav-wrapper {
+        background: white;
+        -webkit-box-shadow: 12px 16px 22px -26px rgba(0,0,0,0.38);
+        -moz-box-shadow: 12px 16px 22px -26px rgba(0,0,0,0.38);
+        box-shadow: 12px 16px 22px -26px rgba(0,0,0,0.38);
+    }
+
+    .main-nav-open {
+        display: block;
+        clear:both;    
+        display: block;
+        clear: both;
+        position: absolute;
+        top: 30px;
+        padding: 15px 0;
+        background: white;
+        left: 0;
+        width: 250px;
+        z-index: 10;
+        -webkit-box-shadow: 12px 16px 22px -26px rgba(0,0,0,0.38);
+        -moz-box-shadow: 12px 16px 22px -26px rgba(0,0,0,0.38);
+        box-shadow: 12px 16px 22px -26px rgba(0,0,0,0.38);
+    }
+    
+    .main-nav li { 
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited { 
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 120%;
+    }
+
+
+  
+    .main-logo-container {
+        width: 256px;
+        margin-top: 15px;
+        margin-bottom: 40px;
+        float: unset;
+    }
+
+    .header-left{
+        height: auto;
+        border: 0;
+        margin: 0 30px;
+    }
+
+    .header-row{
+        width: auto;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    h1 {
+        font-size: 240%;
+    }
+
+    .main-logo-container {
+        margin-right: 0;
+        width: 200px;
+        margin-bottom:20px;
+    }
+
+    .header-left {
+        border: 0px;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        height: auto;
+    }
+
+    .header-right {
+        padding-left: 15px;
+    }
+
+    .header-text {
+        margin-bottom: 40px;
+    }
+
+    .main-logo{
+        width: 200px;
+    }
+
+    .header-logo-image{
+        width: 200px;
+        height: auto;
+    }
+}

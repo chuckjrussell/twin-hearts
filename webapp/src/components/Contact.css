@@ -1,0 +1,19 @@
+.contact-card {
+    margin-bottom: 24px;
+    max-width: 200px;
+    margin: 0 auto 24px auto;
+}
+
+.contact-card-image {
+    height: 250px;
+    max-width: 200px;
+    object-fit: cover;
+}
+
+.contact-role {
+    color:#666;
+    font-style: italic;
+    font-size: 80%;
+    margin-bottom:0px;
+    margin-top: 4px;
+}

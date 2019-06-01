@@ -2,25 +2,25 @@ import React from 'react';
 
 const ContactForm = () => {
     return (
-        <form className="contact-form">
+        <form className="contact-form" action="https://formspree.io/chuckjohnrussell@gmail.com" method="POST" >
             <div className="input-field-group">
-                <label for="name">Name</label>
+                <label htmlFor="name" name="name">Name</label>
                 <input type="text" name="name" placeholder="Your Name"/>
             </div>
             <div className="input-field-group">
-                <label for="email">Email</label>
+                <label htmlFor="email">Email</label>
                 <input type="text" name="email" placeholder="Your Email"/>
             </div>
             <div className="input-field-group">
-                <label for="phone">Phone Number</label>
+                <label htmlFor="phone">Phone Number</label>
                 <input type="text" name="phone" placeholder="Your Phone Number"/>
             </div>
             <div className="input-field-group">
-                <label for="message">Message</label>
-                <textarea name="message" rows="4"></textarea>
+                <label htmlFor="message">Message</label>
+                <textarea name="message" rows="4" ></textarea>
             </div>
             
-            <input type="button" value="Submit"/>
+            <input type="submit" value="Submit" className="btn"/>
         </form>
     );
 }
