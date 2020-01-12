@@ -215,6 +215,7 @@ input[type=submit]{
   border-radius: 200px;
   -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
+  margin: 0 10px;
 }
 
 .btn-full:link,
@@ -230,7 +231,8 @@ input[type=submit]{
 .btn-ghost:link,
 .btn-ghost:visited{
   border: 1px solid var(--accent-color);
-  color: white;
+  color: var(--accent-color);
+  background: white;
 }
 
 .btn:hover,
@@ -243,9 +245,8 @@ input[type=submit]:hover{
 
 .btn-ghost:hover,
 .btn-ghost:active{
-  border: 1px solid #cf6d17;
   color: #fff;
-}
+}np
 
 /*-------------------------------------
 International Travellers
@@ -259,6 +260,12 @@ International Travellers
 
 .contact-card img {
   width: 100%;
+}
+
+.section-agm{
+  background-color: #eee;
+  color:#000;
+  background-attachment:fixed;
 }
 
 /*-------------------------------------

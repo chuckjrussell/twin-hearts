@@ -4,14 +4,13 @@ import Contact from './Contact';
 import kelly from '../img/memberPhotos/kelly-louise.jpg';
 import craig from '../img/memberPhotos/craig.jpg';
 import jackie from '../img/memberPhotos/jackie.jpg';
-import molly from '../img/memberPhotos/molly.jpg';
 import natalie from '../img/memberPhotos/natalie.jpg';
 import flo from '../img/memberPhotos/flo.jpg';
 import kylie from '../img/memberPhotos/kylie.jpg';
 import tom from '../img/memberPhotos/tom.jpg';
 import stevie from '../img/memberPhotos/steve.jpg';
 import cassie from '../img/memberPhotos/cassie.jpg';
-import chuck from '../img/memberPhotos/chuck.png';
+import chuck from '../img/memberPhotos/chuck.jpg';
 
 const ContactList = (props) => {
     return (
@@ -71,12 +70,6 @@ const contacts = [{
     bio: ['Kylie Macdonald is an Education Support staff member at Urquhart Park Primary School, and has a love of musical theatre.',
     'Kylie is one of the newest members of Twin Hearts and looks forward to organizing many wonderful events to support charities, both locally and overseas!'],
     imgUrl: kylie
-},{
-    name: 'Molly Paine',
-    role: '',
-    bio: ['Molly has been a Ballarat local for the last 22 years, and has been involved with Twin Hearts since February 2019. Molly is a bright and bubbly committee member, and brings great enthusiasm to the group. Previously devoting her spare time volunteering abroad, Molly is also passionate about making the most of her time doing as much as she can for the local community.', 
-    'Outside of her passion for volunteering, Molly is also a keen Gridiron player, and has a strong case of the travel bug! '],
-    imgUrl: molly
 },{
     name: 'Cassie Russell',
     role: '',

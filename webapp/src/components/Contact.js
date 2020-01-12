@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Modal, Button} from 'react-bootstrap';
+import {Modal} from 'react-bootstrap';
 
 import './Contact.css';
 
@@ -31,7 +31,7 @@ const Contact = (props) => {
                     return (<p key={idx}>{i}</p>)
                 }))}</Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" onClick={() => setIsShowing(false)}>Close</Button>
+                    <button className="btn" onClick={() => setIsShowing(false)}>Close</button>
                 </Modal.Footer>
             </Modal>
         </>

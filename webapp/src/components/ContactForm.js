@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactForm = () => {
     return (
-        <form className="contact-form" action="https://formspree.io/chuckjohnrussell@gmail.com" method="POST" >
+        <form className="contact-form" action="https://formspree.io/twinheartsinc@gmail.com" method="POST" >
             <div className="input-field-group">
                 <label htmlFor="name" name="name">Name</label>
                 <input type="text" name="name" placeholder="Your Name"/>

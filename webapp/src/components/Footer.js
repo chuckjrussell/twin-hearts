@@ -16,7 +16,8 @@ const Footer = () => {
                 </div>
                 <div className="col span-1-of-2">
                     <ul className="social-links">
-                        <li><a href="https://www.facebook.com/groups/1648669365212347"><i className="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/twinheartsaus/"  target="_blank" rel="noopener noreferrer"><i className="ion-social-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/twinheartsinc/"  target="_blank" rel="noopener noreferrer"><i className="ion-social-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
